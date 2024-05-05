@@ -5,7 +5,6 @@ import proj3 from "../assets/project3.png";
 import proj4 from "../assets/project4.png";
 import proj5 from "../assets/project5.png";
 import proj6 from "../assets/project6.png";
-import laptopcode from "../assets/codelaptop.png"
 
 const projects = [
     {
@@ -48,28 +47,29 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <div className="pt-16 pb-10 sm:pt-16 sm:pb-16 lg:pb-16 max-w-[1200px] mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 mb-6 px-4 sm:px-10">
-                <div className="w-full flex justify-center">
-                    <img src={laptopcode} className="w-[250px] sm:w-[320px] mx-auto" alt="Laptop coding" />
-                </div>
-                <div className="text-gray-300 text-center sm:text-left m-auto">
-                    <h1 className="text-3xl mb-8 tracking-tight">My Work</h1>
-                    <p className="text-sm md:text-xl leading-relaxed">Below, you will find some of my projects which are available for viewing on GitHub.</p>
+        <div className="pt-12 pb-8 sm:pt-16 sm:pb-16 lg:pb-16 max-w-[1200px] mx-auto">
+            <div className="flex justify-center">
+                <div className="bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-500 ease-in-out rounded-xl p-4 text-center">
+                    <h1 className="text-2xl sm:text-4xl mb-6 tracking-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                        My Work
+                    </h1>
+                    <p className="text-xs sm:text-xl leading-snug text-gray-300">
+                    Below, you will find some of my projects which are available for viewing on GitHub.
+                    </p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 px-4 sm:px-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-2 sm:px-10">
                 {projects.map((project, index) => (
-                    <div key={index} className="rounded-xl bg-black/40 overflow-hidden shadow-xl">
+                    <div key={index} className="rounded-xl bg-gradient-to-r from-gray-700 to-gray-900 overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 ease-in-out">
                         <a href={project.link} className="group">
-                            <img src={project.img} alt={project.title} className="h-[180px] sm:h-[220px] w-full object-cover transition duration-200 group-hover:scale-110 rounded-lg" />
+                            <img src={project.img} alt={project.title} className="h-36 sm:h-[220px] w-full object-cover transition duration-200 group-hover:scale-110" />
                         </a>
-                        <div className="p-4">
-                            <h2 className="text-gray-200">
+                        <div className="p-3">
+                            <h2 className="text-lg sm:text-xl font-semibold text-white">
                                 {project.title}
                             </h2>
-                            <p className="text-gray-400">
+                            <p className="text-gray-400 text-xs sm:text-sm">
                                 {project.description}
                             </p>
                         </div>

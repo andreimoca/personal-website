@@ -10,10 +10,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div id="hero"><Hero /></div> <br/><br/>
-      <div id="about"><About /></div> <br/><br/>
+      <div id="hero"><Hero /></div> 
+      <div id="about"><About /></div> 
       <div id="portfolio"><Portfolio /></div> 
-      <div id="contact"><Contact /></div> <br/><br/><br/>
+      <div id="contact"><Contact /></div> 
       <Footer/>
     </div>
   );
