@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
-import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    const { theme, toggleTheme } = useTheme();
     const handleNav = () => setNav(!nav);
 
     return (
