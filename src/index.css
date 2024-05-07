@@ -13,24 +13,6 @@
   }
 }
 
-.wave-container {
-  height: 50vh;  /* Or your desired height */
-  overflow: hidden;
-  position: relative;
-}
-
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%; /* Ensuring the wave covers enough space when moving */
-  height: 100%;
-  background: url('assets/wave.svg') repeat-x;
-  animation: moveWave 30s linear infinite;
-}
-
-
-
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: black;
@@ -41,7 +23,10 @@ body {
   background-size: 20px 20px;
   background-color: #232323;
 }
-
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
 
 .primary-color {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-sky-800 to-sky-500  inline-block;
