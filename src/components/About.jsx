@@ -10,7 +10,7 @@ const About = () => {
                             About Me
                         </h3>
                         <p className='text-xs md:text-sm lg:text-lg leading-snug md:leading-8 text-gray-300'>
-                            Hello! I am Andrei, a first-year Computer Science student at Babes-Bolyai University in Cluj-Napoca, with a passion for technology, coding, finance, and competitions.<br/><br/>
+                            Hello! I am Andrei, Software Engineer STEP Intern at Google Zurich & Computer Science student at Babes-Bolyai University, with a passion for technology, coding, finance, and competitions.<br/><br/>
                             I graduated as valedictorian from Liviu Rebreanu High School with GPA 4.0/4.0.<br/>
                             In the Baccalaureate exam, I scored a perfect 10/10 in Mathematics. My extensive achievements earned me admission to all universities in the country without the need for entrance exams, and I was granted an automatic perfect score of 10/10 in the Computer Science Baccalaureate exam.<br/><br/>
                             I have garnered numerous medals and honors at regional, national, and international competitions, including the Olympiad.<br/>

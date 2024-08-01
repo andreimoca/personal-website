@@ -12,6 +12,7 @@ const Hero = () => {
                 </h1>
                 <TypeAnimation
                     sequence={[
+                        "Intern @ Google Zurich", 1000,
                         "Computer Science Student", 1000,
                         "Software Developer", 1000,
                         "Competitive Programmer", 1000,
